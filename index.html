@@ -42,14 +42,16 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#summary">Summary</a>
                     </li>
-                    <!--
                     <li>
-                        <a class="page-scroll" href="#download">Download</a>
-                    </li> -->
+                        <a class="page-scroll" href="#skills">Skills</a>
+                    </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
                     </li>
                 </ul>
             </div>
@@ -57,7 +59,6 @@
         </div>
         <!-- /.container -->
     </nav>
-   
     <!-- Intro Header -->
     <header class="intro">
         <div class="intro-body">
@@ -69,7 +70,7 @@
                             <br>Fitness enthusiast.
                             <br>Nature lover.
                             <br>Devourer of knowledge.</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
+                        <a href="#summary" class="btn btn-circle page-scroll" id="scroll-button">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
@@ -79,29 +80,36 @@
     </header>
     <div id="particles-js"></div>
     <!-- About Section -->
-    <section id="about" class="container content-section text-center">
+    <section id="summary" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
-                <h2>About Me</h2>
-                <p>I'm a Computer Science major from the National University of Singapore, currently on NOC (NUS Overseas College), a year-long work-study program, where I get to work at a startup in the Silicon Valley Bay Area and study entrepreneurship at Stanford University. </p>
-                <p>I'm fascinated by technology and its inherent ability to scale exponentially, in terms of its growth as well as its impact on human society. Be it in alleviating human suffering in the undeveloped countries, creating much needed change in regions of political grid-lock or creating new breakthroughs in energy, healthcare or education, technology is usually the main driving force behind those changes. And since software is inherent in virtually every technology, I seek to master software development, specifically in ubiquitous, high-growth, high-impact sectors such as mobile and web development. Idealistic as it may sound, I aim to change the world through the creation of products that impact the communities we live in for the better, and I'm getting there one day at a time.</p>
-                <p>In my free time, I love forays into nature, be it getting beaten up by the crashing waves while surfing or being surrounded by nothing but silence and the redwoods in a national park, or falling asleep and taking the starry night sky as my blanket.</p>
-                <p>Technology and nature may seem to be oxymorons, but I believe that the two are not and should not be mutually exclusive to each other. As much as we come from nature, technology is also an intrinsic and human part of us, an extension of our bodies and minds. Humanity's goal should be to harness technology and allow nature, and life itself, to flourish in ways that would have been impossible otherwise.
-            </div>
-        </div>
-    </section>
-    <!-- Download Section 
-    <section id="download" class="content-section text-center">
-        <div class="download-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>Download Grayscale</h2>
-                    <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-                    <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
+                <h2>Summary</h2>
+                <div class="media-left">
+                    <img id="profile-pic" class="media-object" src="img/profilepic-mono.jpg" />
+                </div>
+                <div class="media-body" id="profile-body">
+                    <p>I'm a <span class="txtGr">Computer Science</span> major from the National University of Singapore, currently on NOC (NUS Overseas College), a <span class="txtGr">year-long</span> program, where I get to <span class="txtGr">work </span> at a startup in the <span class="txtGr">Silicon Valley </span>Bay Area and <span class="txtGr">study</span> entrepreneurship at <span class="txtGr">Stanford University.</span> I'm passionate about building <span class="txtGr">life-changing web and mobile </span> technologies at high-impact <span class="txtGr">startups.</span></p>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
+    <section id="skills" class="content-section text-center">
+        <div class="skills-section">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Skills</h2>
+                    <p> <span class="txtGr">&lt;web&#47;&gt;</span>
+                    	<br>HTML, CSS, Bootstrap, Javascript, Socket.io
+                    	<br><span class="txtGr">&lt;mobile&#47;&gt;</span>
+                        <br>Objective-C, iOS
+                        <br><span class="txtGr">&lt;others&#47;&gt;</span>
+                        <br>Java, C
+                        <br>Guitar, singing, trekking, military operations
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">
         <div class="row">
@@ -111,14 +119,25 @@
                 </p>
                 <ul class="list-inline banner-social-buttons">
                     <li>
-                        <a href="https://twitter.com/jonathanlimsc" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                        <a href="https://twitter.com/jonathanlimsc" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw fa-2x"></i> <span class="network-name"></span></a>
                     </li>
-                    <li> <a href="https://github.com/jonathanlimsc" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                    <li> <a href="https://github.com/jonathanlimsc" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw fa-2x"></i> <span class="network-name"></span></a>
                     </li>
                     <li>
-                        <a href="https://sg.linkedin.com/in/jonathanlimsc" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                        <a href="https://sg.linkedin.com/in/jonathanlimsc" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
                     </li>
                 </ul>
+            </div>
+        </div>
+    </section>
+    <!--About Me section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About me</h2>
+                <p>I'm fascinated by <span class="txtGr">technology</span> and its inherent ability to <span class="txtGr">scale exponentially,</span> in terms of its growth as well as its impact on human society. Be it in <span class="txtGr">alleviating human suffering</span> in the undeveloped countries, <span class="txtGr">creating much needed change</span> in regions of political grid-lock or creating in energy, healthcare or education,technology is usually the main driving force behind those changes. And since <span class="txtGr">software is inherent</span> in virtually every technology, <span class="txtGr">I seek to master</span> software development, specifically in <span class="txtGr">ubiquitous, high-growth, high-impact</span> sectors such as <span class="txtGr">mobile and web development.</span> Idealistic as it may sound, I aim to <span class="txtGr">change the world</span> through the creation of products that <span class="txtGr">impact the communities</span> we live in for the better, and I'm getting there <span class="txtGr">one day at a time.</span></p>
+                <p>In my free time, I love <span class="txtGr">forays into nature</span>, be it getting beaten up by the crashing waves while surfing or being surrounded by nothing but silence and the redwoods in a national park, or falling asleep and taking the starry night sky as my blanket.</p>
+                <p><span class="txtGr">Technology and nature</span> may seem to be oxymorons, but I believe that the two are not and should not be mutually exclusive to each other. As much as we come from nature, technology is also an <span class="txtGr">intrinsic and human</span> part of us, an extension of our bodies and minds. <span class="txtGr">Humanity's goal</span> should be to <span class="txtGr">harness technology</span> and <span class="txtGr">allow nature, and life itself, to flourish</span> in ways that would have been impossible otherwise.
             </div>
         </div>
     </section>
@@ -127,7 +146,7 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Jonathan Lim 2015</p>
+            <p><span class="txtRd">Copyright &copy;</span> Jonathan Lim 2015</p>
         </div>
     </footer>
     <!-- jQuery -->
@@ -140,9 +159,8 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCNQSfiBVnETBpf4nq9xInQ953ykJl-_3M"></script>
     <!-- Custom Theme JavaScript -->
     <script type="text/javascript" src="js/grayscale.js"></script>
-     <script type="text/javascript" src="js/particles.js"></script>
+    <script type="text/javascript" src="js/particles.js"></script>
     <script type="text/javascript" src="js/particlesApp.js"></script>
- 
 </body>
 
 </html>

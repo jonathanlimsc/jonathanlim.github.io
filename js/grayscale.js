@@ -46,10 +46,12 @@ function init() {
             lng: -122.1986
         }, // Redwood City
 
-        // Disables the default Google Maps UI components
+        // Google Maps UI components
         disableDefaultUI: true,
         scrollwheel: false,
         draggable: true,
+        streetViewControl: true,
+        zoomControl: true,
 
         // How you would like to style the map. 
         // This is where you would paste any style found on Snazzy Maps.
@@ -288,14 +290,38 @@ function init() {
 
     // Custom Map Marker Icon - Customize the map-marker.png file to customize your icon
     var image = 'img/map-marker-black-small.png';
-    var myLatLng = new google.maps.LatLng(37.4843, -122.1986)
+    var myLatLng = new google.maps.LatLng(37.4843, -122.1986);
     var marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
         animation: google.maps.Animation.DROP,
         icon: image
     });
-    marker.addListener('click', toggleBounce);
+
+    // Info-window
+    var contentString = '<div id="map-content" class="content text-center"><h3>121 Broadway, Redwood City, CA 94063</h3>'+
+                        '<p>Long: 37.4843, Lat: -122.1986</p></div>';
+    var infoWindow = new google.maps.InfoWindow({
+        content: contentString
+    });
+
+    // Click functionalities
+    var isInfoWindowOpen = false;
+    marker.addListener('click', clickActions);
+    function clickActions(){
+        toggleBounce();
+        toggleInfoWindow();
+    }
+
+    function toggleInfoWindow(){
+            if(!isInfoWindowOpen){
+                infoWindow.open(map, marker);
+                isInfoWindowOpen = true;
+            } else{
+                infoWindow.close();
+                isInfoWindowOpen = false;
+            }
+    }
 
     function toggleBounce() {
         if (marker.getAnimation() !== null) {
@@ -303,5 +329,5 @@ function init() {
         } else {
             marker.setAnimation(google.maps.Animation.BOUNCE);
         }
-    }
+    } 
 }

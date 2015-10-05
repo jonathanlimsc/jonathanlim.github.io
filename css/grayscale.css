@@ -174,6 +174,8 @@ a:focus {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    position:relative;
+    z-index: 1;
 }
 
 .intro .intro-body {
@@ -300,12 +302,7 @@ a:focus {
     width: 100%;
     color: #fff;
 }
-/*
-#map {
-    width: 100%;
-    height: 200px;
-    margin-top: 100px;
-}*/
+
 #map-content{
     color: black;
     font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
